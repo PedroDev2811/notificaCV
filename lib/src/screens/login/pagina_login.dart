@@ -50,7 +50,7 @@ class _PaginaLoginState extends State<PaginaLogin> {
                   Container(
                     padding: const EdgeInsets.only(top: 96),
                     width: 168,
-                    child: Image.asset('lib/src/assets/images/logo-unicv.png'),
+                    child: Image.asset('lib/src/assets/images/logo.png'),
                   ),
                   const SizedBox(
                     height: 36,
@@ -95,7 +95,7 @@ class _PaginaLoginState extends State<PaginaLogin> {
                           validator: (valorSenha) {
                             if (valorSenha == null ||
                                 valorSenha.trim().length < 6) {
-                              return 'A senha deve ter pelo menos 6 caracteres';
+                              return 'A senha deve ter no mínimo 6 caracteres';
                             }
                             return null;
                           },
